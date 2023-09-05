@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb+srv://root:root@cluster1.pdjfuml.mongodb.net/firstMERN")
+  .connect(process.env.DATABASE)
   .then(() => {
     console.log("Connected");
   })
